@@ -60,7 +60,7 @@ button {
 
 .section__tag {
   color: #6415ff;
-  letter-spacing: 1.6;
+  letter-spacing: 0.16em;
   font-weight: 600;
 }
 
@@ -392,12 +392,93 @@ nav {
     padding: 0 32px;
 }
 
+#pricing .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .pricing__description {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
 }
 
 .pricing__description--title {
     margin: 20px 0;
+}
+
+.pricing__description--para {
+    color: #718096;
+    max-width: 520px;
+    text-align: center;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan {
+    border: 2px solid rgb(229, 231, 235);
+    padding: 0 32px;
+    border-radius: 8px;
+    margin: 64px 32px 0 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.plan__top {
+    text-align: center;
+    padding: 32px;
+}
+
+.plan__name {
+  color: #1a202c;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.plan__price {
+   font-size: 48px;
+   font-weight: bold;
+   color: #1a202c;
+   margin: 16px 0;
+}
+
+.plan__duration {
+    font-weight: 600;
+    color: #a0aec0;
+    letter-spacing: 0.1em;
+}
+
+.plan__middle {
+    text-align: center;
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
+    padding: 32px;
+}
+
+.plan__for {
+    color: #1a202c;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.plan__offers {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #718096;
+    line-height: 1.5;
+}
+
+.plan__bottom {
+    text-align: center;
+    padding: 32px;
+}
+
+.plan__btn {
+    padding: 18px 50px;
 }
