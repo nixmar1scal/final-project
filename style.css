@@ -373,6 +373,7 @@ nav {
 
 .values__title {
     margin: 20px 0;
+    color: rgb(36, 62, 99);
 }
 
 .values__list {
@@ -407,6 +408,7 @@ nav {
 
 .pricing__description--title {
     margin: 20px 0;
+    color: rgb(36, 62, 99);
 }
 
 .pricing__description--para {
@@ -481,4 +483,115 @@ nav {
 
 .plan__btn {
     padding: 18px 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.plan__btn:hover {
+    background-color: #8852f5;
+}
+
+/* TESTIMONIALS */
+
+#testimonials {
+    padding: 0 32px;
+}
+
+#testimonials .row {
+    display: flex;
+}
+
+.testimonials__img {
+    width: 40%;
+}
+
+.testimonials__description {
+    width: 60%;
+    padding-left: 60px;
+}
+
+.testimonials__title {
+    margin: 20px 0;
+    color: rgb(36, 62, 99);
+}
+
+.testimonials__description--para {
+   color: #718096;
+}
+
+.testimonial {
+    margin-top: 40px;
+}
+
+.fa-star {
+    color: rgb(246, 173, 85);
+}
+
+.testimonial__title {
+    margin: 15px 0;
+}
+
+.testimonial__para {
+    color: 4a6668;
+    margin-bottom: 32px;
+}
+
+.testimonial__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial__profile {
+   display: flex;
+   align-items: center;
+}
+
+.testimonial__details {
+    margin-left: 15px;
+}
+
+.testimonial__name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.testimonial__role {
+    color: #7c8ba1;
+}
+
+.testimonial__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.testimonials__buttons {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edf2f7;
+    color: #6415ff;
+    padding: 10px 19px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.testimonial__button:hover {
+    background-color: rgb(226, 232, 240);
+}
+
+.divider {
+    width: 1px;
+    height: 24px;
+    background-color: rgb(229, 231, 235);
 }
