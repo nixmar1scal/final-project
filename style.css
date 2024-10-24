@@ -367,6 +367,10 @@ nav {
     margin: 0 20px;
 }
 
+.values__description--para {
+    color: #718096;
+}
+
 .values__title {
     margin: 20px 0;
 }
@@ -379,4 +383,21 @@ nav {
 
 .value__para {
     margin: 20px 20px 0 0;
+    color: #718096;
+}
+
+/* PRICING */
+
+#pricing {
+    padding: 0 32px;
+}
+
+.pricing__description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pricing__description--title {
+    margin: 20px 0;
 }
