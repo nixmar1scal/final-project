@@ -23,7 +23,7 @@ p {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -429,16 +429,38 @@ nav {
 
 .plans {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
 }
 
 .plan {
-  border: 2px solid rgb(229, 231, 235);
-  padding: 0 32px;
+  width: calc(100% / 3);
   border-radius: 8px;
   margin: 64px 18px 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.plan:nth-child(2) .plan__name,
+.plan:nth-child(2) .plan__price,
+.plan:nth-child(2) .plan__offers,
+.plan:nth-child(2) .plan__duration,
+.plan:nth-child(2) .plan__for {
+    color: #f7fafc;
+}
+
+.plan:nth-child(2) {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.plan__stripe {
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .plan__top {
@@ -494,12 +516,29 @@ nav {
 .plan__btn {
   padding: 18px 50px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.05em;
 }
 
 .plan__btn:hover {
-  background-color: #8852f5;
+    transform: translate(1px, -1px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.plan:nth-child(1) .plan__btn,
+.plan:nth-child(1) .plan__stripe {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan:nth-child(2) .plan__btn {
+    background: #fff;
+    color: #8852f5;
+}
+
+.plan:nth-child(3) .plan__btn,
+.plan:nth-child(3) .plan__stripe {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
 /* TESTIMONIALS */
@@ -653,11 +692,10 @@ nav {
   color: #fff;
   background-color: #f56565;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
-  
 }
 
 .start__btn-one:hover {
-    background-color: rgb(229, 62, 62);
+  background-color: rgb(229, 62, 62);
 }
 
 .start__btn-two {
@@ -666,81 +704,98 @@ nav {
 }
 
 .start__btn-two:hover {
-    background-color: rgb(247, 250, 252);
-    color: rgb(100, 21, 255);
+  background-color: rgb(247, 250, 252);
+  color: rgb(100, 21, 255);
 }
 
 /* FOOTER */
 
 footer {
-    background-color: #6415ff;
-    padding: 80px 32px;
+  background-color: #6415ff;
+  padding: 80px 32px;
 }
 
 .footer__columns {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer__column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .footer__column--link {
-    color: #fff;
-    margin-top: 12px;
+  color: #fff;
+  margin-top: 12px;
+  position: relative;
+}
+
+.footer__column--link:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    background: #fff;
+    opacity: 0;
+}
+
+.footer__column--link:hover:after {
+    opacity: 1;
 }
 
 .footer__titles {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1.5;
-    margin-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 .footer__divider {
-    background-color: rgb(116, 44, 255);
-    height: 2px;
-    width: 100%;
-    margin: 62px 0;
+  background-color: rgb(116, 44, 255);
+  height: 2px;
+  width: 100%;
+  margin: 62px 0;
 }
 
 .footer__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .footer__logo--img {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 .footer__logo--name {
-    color: #fff;
-    padding-left: 10px;
-    font-weight: 600;
-
+  color: #fff;
+  padding-left: 10px;
+  font-weight: 600;
 }
 
 .footer__copyright {
-    color: #fff;
-    font-size: 12px;
+  color: #fff;
+  font-size: 12px;
 }
 
 .fa-brands {
-    margin-left: 12px;
-    font-size: 26px;
-    color: #fff;
+  margin-left: 12px;
+  font-size: 26px;
+  color: #fff;
 }
 
 .fa-brands:hover {
-    color: #eef0f4;
+  color: #eef0f4;
 }
