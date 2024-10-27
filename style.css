@@ -543,7 +543,7 @@ nav {
 }
 
 .testimonial__para {
-  color: 4a6668;
+  color: #4a6668;
   margin-bottom: 32px;
 }
 
@@ -671,3 +671,76 @@ nav {
 }
 
 /* FOOTER */
+
+footer {
+    background-color: #6415ff;
+    padding: 80px 32px;
+}
+
+.footer__columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__column--link {
+    color: #fff;
+    margin-top: 12px;
+}
+
+.footer__titles {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.footer__divider {
+    background-color: rgb(116, 44, 255);
+    height: 2px;
+    width: 100%;
+    margin: 62px 0;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo--img {
+    height: 40px;
+    width: 40px;
+}
+
+.footer__logo--name {
+    color: #fff;
+    padding-left: 10px;
+    font-weight: 600;
+
+}
+
+.footer__copyright {
+    color: #fff;
+    font-size: 12px;
+}
+
+.fa-brands {
+    margin-left: 12px;
+    font-size: 26px;
+    color: #fff;
+}
+
+.fa-brands:hover {
+    color: #eef0f4;
+}
