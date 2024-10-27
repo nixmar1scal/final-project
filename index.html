@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="index.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -32,6 +33,20 @@
             <a href="#" class="nav__link">Contact Us</a>
             <a href="#" class="nav__link login">Login</a>
             <a href="#" class="nav__link nav__link--primary">Sign Up</a>
+          </div>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <a class="menu__list" href="">About</a>
+            <a class="menu__list" href="">Blog</a>
+            <a class="menu__list" href="">Pricing</a>
+            <a class="menu__list" href="">Contact Us</a>
+            <a class="menu__list" href="">Login</a>
+            <a class="menu__list" href="">Sing Up</a>
           </div>
         </nav>
       </div>
@@ -516,9 +531,7 @@
               src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
               alt=""
             />
-            <div class="footer__logo--name">
-                Treact Inc.
-            </div>
+            <div class="footer__logo--name">Treact Inc.</div>
           </div>
           <div class="footer__copyright">
             &copy; 2018 Treact Inc. All Rights Reserved.
